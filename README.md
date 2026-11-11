@@ -1,5 +1,9 @@
 # Gömülü UART Komut Satırı
 
+[![CI](https://github.com/erencicekk25/embedded-uart-shell/actions/workflows/ci.yml/badge.svg)](https://github.com/erencicekk25/embedded-uart-shell/actions/workflows/ci.yml)
+![Language](https://img.shields.io/badge/C-11-blue.svg)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
 Bu proje, UART üzerinden gelen komutları işleyen küçük bir C kabuğudur. Sabit boyutlu bellek kullanır ve dinamik bellek ayırmaz.
 
 ## Özellikler
