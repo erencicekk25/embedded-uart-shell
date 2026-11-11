@@ -11,6 +11,11 @@ add_library(embedded_uart_shell
 )
 target_include_directories(embedded_uart_shell PUBLIC include)
 
+# MSVC ships C11 atomics behind an experimental switch.
+if(MSVC)
+    target_compile_options(embedded_uart_shell PUBLIC /experimental:c11atomics)
+endif()
+
 add_executable(shell_demo example/main.c)
 target_link_libraries(shell_demo PRIVATE embedded_uart_shell)
 
